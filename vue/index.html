@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/static.css">
+    <script src="js/vue.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <div v-if="seen">
+        <p>{{ message }}</p>
+        <input v-model="name">
+        <button v-on:click="hiden">Ок</button>
+    </div>
+    <div v-if="seen2">
+        <p>{{ message2 }}</p>
+        <input v-model="secondName">
+        <button v-on:click="hiden2">Ок</button>
+    </div>
+<P>Первый игрок: {{ name }}</P>
+<P>Второй игрок: {{ secondName }}</P><br>
+
+<div v-if="seen===false && seen2===false" v-on:click="play">
+<p>Ходит {{ player }}</p>
+<table class="grid" v-on:click="win">
+        <tr >
+          <td v-on:click="move1">{{ sign1 }}</td>
+          <td v-on:click="move2">{{ sign2 }}</td>
+          <td v-on:click="move3">{{ sign3 }}</td>
+        </tr>
+        <tr>
+          <td v-on:click="move4">{{ sign4 }}</td>
+          <td v-on:click="move5">{{ sign5 }}</td>
+          <td v-on:click="move6">{{ sign6 }}</td>
+        </tr>
+        <tr>
+          <td v-on:click="move7">{{ sign7 }}</td>
+          <td v-on:click="move8">{{ sign8 }}</td>
+          <td v-on:click="move9">{{ sign9 }}</td>
+        </tr>
+</table>
+</div>    
+</div>
+
+
+
+</body>
+</html>

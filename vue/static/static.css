@@ -1,0 +1,22 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    margin: 0px;
+  }
+
+.grid {
+    background-color: #34495e;
+    color: #fff;
+    width: 30%;
+    border-collapse: collapse;
+  }
+
+td {
+  width: 33.333%;
+  height: 90px;
+  border: 6px solid #2c3e50;
+  font-size: 3.5em;
+  font-family: 'Gochi Hand', sans-serif;
+}
